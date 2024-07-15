@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url ('/public/background.jpg');
+    font-size: 24px;
+    background-image: url('background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -9,17 +10,24 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    color: white;
+    color: rgb(0, 0, 0);
     /* Ensure text is readable against the background */
 }
 
 h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 75px;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
+}
+
+.card.bg-transparent {
+    background-color: rgba(255, 255, 255, 0.382) !important;
+    /* Semi-transparent background for readability */
 }
 
 .converter {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(254, 254, 254, 0.182);
     /* Semi-transparent background for readability */
     padding: 30px;
     border-radius: 5px;
@@ -40,7 +48,7 @@ h1 {
     margin-top: 10px;
     margin-bottom: 20px;
     cursor: pointer;
-    background-color: #3498db;
+    background-color: #4686fe;
     color: white;
     border: none;
     border-radius: 5px;
@@ -48,7 +56,7 @@ h1 {
 }
 
 .converter button:hover {
-    background-color: #2980b9;
+    background-color: #57e3ff;
 }
 
 p {
