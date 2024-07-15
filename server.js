@@ -25,9 +25,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Serve the index.html file when accessing the root URL
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
-});
 
 // Route to fetch exchange rates from the external API
 app.get("/api/exchange-rate", async (req, res) => {

@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Converter</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="bg-light">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-light">
     <div class="container">
-        <h1 class="text-center my-4">Currency Converter</h1>
-        <div class="card p-4 shadow-sm bg-transparent border-0">
-            <div class="form-group">
-                <label for="base-currency">Base Currency:</label>
-                <select id="base-currency" class="form-control"></select>
-            </div>
-            <div class="form-group">
-                <label for="amount">Amount:</label>
-                <input type="number" id="amount" value="1" min="0" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="target-currency">Target Currency:</label>
-                <select id="target-currency" class="form-control"></select>
-            </div>
-            <div class="form-group">
-                <p>Converted Amount: <span id="converted-amount" class="font-weight-bold"></span></p>
-            </div>
-            <button id="historical-rates" class="btn btn-primary btn-block">View Historical Rates</button>
-            <div id="historical-rates-container" class="my-3"></div>
-            <button id="save-favorite" class="btn btn-secondary btn-block">Save Favorite</button>
-            <div id="favorite-currency-pairs" class="mt-3"></div>
+      <h1 class="text-center my-4">Currency Converter</h1>
+      <div class="card p-4 shadow-sm bg-transparent border-0">
+        <div class="form-group">
+          <label for="base-currency">Base Currency:</label>
+          <select id="base-currency" class="form-control"></select>
         </div>
-        <div class="currency-icon text-center my-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-currency-exchange" viewBox="0 0 16 16">
-                <path d="M0 5a5 5 0 0 0 4.027 4.905 6.5 6.5 0 0 1 .544-2.073C3.695 7.536 3.132 6.864 3 5.91h-.5v-.426h.466V5.05q-.001-.07.004-.135H2.5v
-                -.427h.511C3.236 3.24 4.213 2.5 5.681 2.5c.316 0 .59.031.819.085v.733a3.5 3.5 0 0 0-.815-.082c-.919 0-1.538.466-1.734 1.252h1.917v.427h-
-                1.98q-.004.07-.003.147v.422h1.983v.427H3.93c.118.602.468 1.03 1.005 1.229a6.5 6.5​⬤
+        <div class="form-group">
+          <label for="amount">Amount:</label>
+          <input
+            type="number"
+            id="amount"
+            value="1"
+            min="0"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="target-currency">Target Currency:</label>
+          <select id="target-currency" class="form-control"></select>
+        </div>
+        <div class="form-group">
+          <p>
+            Converted Amount:
+            <span id="converted-amount" class="font-weight-bold"></span>
+          </p>
+        </div>
+        <button id="historical-rates" class="btn btn-primary btn-block">
+          View Historical Rates
+        </button>
+        <div id="historical-rates-container" class="my-3"></div>
+        <button id="save-favorite" class="btn btn-secondary btn-block">
+          Save Favorite
+        </button>
+        <div id="favorite-currency-pairs" class="mt-3"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
