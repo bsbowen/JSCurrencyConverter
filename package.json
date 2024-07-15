@@ -1,0 +1,28 @@
+{
+  "name": "currencyconverter",
+  "version": "1.0.0",
+  "description": "As a final assessment for the JavaScript unit, you will create a more advanced currency converter application using JavaScript, while the HTML and CSS will be provided. This project will test your knowledge of JavaScript concepts, such as fetching data from an API, manipulating the DOM, handling user input, performing calculations.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Brittany Bowen <britt.s.bowen@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@everapi/freecurrencyapi-js": "^1.0.1",
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "path": "^0.12.7",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "sequelize-cli": "^6.6.2"
+  }
+}

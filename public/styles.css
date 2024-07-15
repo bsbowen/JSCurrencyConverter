@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url ('/public/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    /* Ensure text is readable against the background */
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.converter {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Semi-transparent background for readability */
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.converter label,
+.converter select,
+.converter input {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    /* Ensure labels and inputs are readable */
+}
+
+.converter button {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.converter button:hover {
+    background-color: #2980b9;
+}
+
+p {
+    margin-top: 20px;
+    color: black;
+    /* Ensure paragraphs are readable */
+}
+
+#historical-rates-container {
+    margin-top: 20px;
+}
+
+#favorite-currency-pairs {
+    margin-top: 20px;
+}
+
+.currency-icon {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.currency-icon svg {
+    width: 50px;
+    height: 50px;
+    fill: #3498db;
+}
